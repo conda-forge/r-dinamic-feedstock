@@ -1,11 +1,11 @@
-About r-dinamic
-===============
+About r-dinamic-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dinamic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=dinamic
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dinamic-feedstock/blob/main/LICENSE.txt)
 
 Summary: This function implements the DiNAMIC procedure for assessing the statistical significance of recurrent DNA copy number aberrations (Bioinformatics (2011) 27(5) 678 - 685).
 
