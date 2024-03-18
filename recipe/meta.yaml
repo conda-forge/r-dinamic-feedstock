@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dinamic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dinamic/dinamic_{{ version }}.tar.gz
-  sha256: f9db33c4a3ba24e87d1a301f4ed93bfff192f96fc18dec150895af351016a757
+  sha256: 557b2280cf13be68314a718ccaf0a50d02838fef514a882de495fc7de5778807
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,8 +37,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=dinamic
   license: GPL-2.0-only
-  summary: This function implements the DiNAMIC procedure for assessing the statistical significance
-    of recurrent DNA copy number aberrations (Bioinformatics (2011) 27(5) 678 - 685).
+  summary: This function implements the DiNAMIC procedure for assessing the statistical significance of recurrent DNA copy number aberrations (Bioinformatics (2011) 27(5) 678 - 685).
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
